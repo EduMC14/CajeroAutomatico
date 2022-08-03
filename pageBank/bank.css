@@ -1,0 +1,244 @@
+body::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    background-image: linear-gradient(115deg,
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0.4)), url(/src/Bitcoin-virtual-digital-currency_3840x2160.jpg);
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center;
+}
+
+body{
+    color: #fff;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    box-sizing: border-box;
+    }
+
+img{
+    width: 200px;
+    height: 55px;
+    margin-left: 40px ;
+}
+
+
+#navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: auto;
+    position: fixed;
+    left: 0px;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+#navbar ul{
+    list-style: none;
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 20px;
+    font-size: 20px;
+}
+
+#navbar a{
+    color: #fff;
+    text-decoration: none;
+    padding-right: 40px; }
+
+
+
+.box-left{
+    float: left;
+    width: 60%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.box-rigth{
+    float: right;
+    width: 40%;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.ingre-can{
+    text-align: center;
+    margin-top: 0px auto;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+.text-bienvenido{
+    text-align: center;
+    font-size: 2.1rem;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+}
+
+.box-principal{
+    width: 50%;
+    height: 50%;
+    background-color:rgba(0, 0, 0, 0.6) ;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem 2rem;
+    box-sizing: border-box;
+    font-family: 'Kdam Thmor Pro', sans-serif;
+    border-radius: 5px;
+}
+
+
+.container-buttons{
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 60%;
+    text-align: center;
+    margin: 0px auto;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+
+.btn{
+    width: 27%;
+    height: 70px;
+    font-size: 2rem;
+    margin: 1px;
+    border: 1px solid rgba(100, 100, 100, 0.3);
+    cursor: pointer;
+    background-size: 300%;
+    border-radius: 3px;
+    background-image: linear-gradient(to left, #00b7da, #161569,#00b7da);
+}
+
+.btn:hover{
+    background-position: right;
+}
+
+#btnReset{
+    width: 57%;
+    height: 70px;
+    font-size: 2rem;
+    background-image: linear-gradient(to left, #ff5733, #b81b57,#ff5733);
+}
+
+#btnReset:hover{
+    background-position: right;
+}
+
+#btn-re, #btn-dep{
+    width: 45%;
+    height: 6vh;
+    font-size: 1rem;
+    font-family: 'Roboto', 'sans-serif'; 
+    background-color: #141414;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    display: inline-flex;
+    cursor: pointer;
+    transition: .3s ease all;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    margin-top: 10px;
+}
+
+span{
+    position: relative;
+    z-index: 2;
+    transition: .3s ease all;
+}
+
+#btn-dep::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .6s ease-in-out all;
+    border-radius: 100px;
+}
+#btn-dep:hover::after{
+    transform: scale(300);
+    background:#18a362;
+
+}
+
+#btn-re::after{
+    content: "";
+    width: 1px;
+    height: 1px;
+    background: none;
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transition: .6s ease-in-out all;
+    border-radius: 100px;
+}
+#btn-re:hover::after{
+    transform: scale(300);
+    background: #cc1010;
+
+}
+
+#saldo{
+    height: 15%;
+    width: 70%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: white 3px solid;
+    outline: none;
+    background-color: transparent;
+}
+#input-dep-re{
+    display: block;
+    margin: 0 auto 5vh auto;
+    height: 7%;
+    width: 50%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    text-align: center;
+    font-size: 1.3rem;
+    border: none;
+    border-bottom: white 3px solid;
+    outline: none;
+    background-color: transparent;
+}
+
+#input-dep-re::placeholder{
+    color: #fff;
+    font-family: 'Roboto', 'sans-serif';
+}
+
+
+h3{
+    font-family: 'Roboto', 'sans-serif';
+}
+
+.colorVerde{
+    border-bottom: #18a362 3px solid;
+}
+
+.colorRed{
+    border-bottom: #cc1010 3px solid;
+}

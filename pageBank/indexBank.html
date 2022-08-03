@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco de los desarrolladores</title>
+    <link rel="stylesheet" href="bank.css">
+    <script defer src="funcBank.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@595&family=Kdam+Thmor+Pro&family=Lobster&family=Roboto:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/5ce9e95d75.js" crossorigin="anonymous"></script>
+<body>
+    <main>
+        <nav id="navbar">
+            <img src="/src/pngegg.png" alt="">
+            <ul>
+                <li><a href="#">Menu <i class="fa-solid fa-caret-down"></i></a></li>
+                <li><a href="#">Atencion a Clientes</a></li>
+                <li><a href="">Contacto <i class="fa-solid fa-phone-flip"></i></a></li>
+            </ul>
+        </nav>
+        <div class="box-left">
+            <h1 class="text-bienvenido">Bienvenido a tu Banco en Linea</h1>
+            <div class="box-principal">
+    
+                <h1>Tu Saldo es $:</h1>
+                <input type="number" id="saldo">
+                <div>
+                    <h3>¿Que operacion Deseas Realizar?</h3>
+                    
+                        <button id="btn-re" class="stylebtn"><span>Retirar</span></button>
+                        <button id="btn-dep" class="stylebtn"><span>Depositar</span></button>
+                    
+                </div>
+            </div>
+        </div>
+        <div class="box-rigth">
+
+            <h1 class="ingre-can">Ingresa La Cantidad</h1>
+            <input type="text" id="input-dep-re" placeholder="Ingrese la Cantidad Aqui">
+    
+            <div class="container-buttons">
+                <div class="box-primera-fila">
+                    <button class="btn">7</button>
+                    <button class="btn">8</button>
+                    <button class="btn">9</button>
+    
+                </div>
+                <div class="box-segunda-fila">
+                    <button class="btn">4</button>
+                    <button class="btn">5</button>
+                    <button class="btn">6</button>
+    
+                </div>
+                <div class="tercera-fila">
+                    <button class="btn">1</button>
+                    <button class="btn">2</button>
+                    <button class="btn">3</button>
+    
+                </div>
+                <div class="cuarta-fila">
+                    <button class="btn">0</button>
+                    <button id="btnReset">Borrar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+</html>
